@@ -1,3 +1,64 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "logo",
+      "description": "Chefryer logo",
+      "imageUrl": "https://i.imgur.com/20yL90d.png",
+      "imageHint": "logo"
+    },
+    {
+      "id": "hero-main",
+      "description": "A delicious air fryer meal",
+      "imageUrl": "https://i.imgur.com/tgj4dFn.png",
+      "imageHint": "airfryer food"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "First testimonial screenshot",
+      "imageUrl": "https://i.imgur.com/iEfrduo.png",
+      "imageHint": "testimonial review"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Second testimonial screenshot",
+      "imageUrl": "https://i.imgur.com/EaEFMn6.jpeg",
+      "imageHint": "testimonial review"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Third testimonial screenshot",
+      "imageUrl": "https://i.imgur.com/HPH4XVJ.jpeg",
+      "imageHint": "testimonial review"
+    },
+    {
+      "id": "steps-overview",
+      "description": "Overview of the 3 steps process",
+      "imageUrl": "https://i.imgur.com/4Lsa0BO.png",
+      "imageHint": "cooking steps"
+    },
+    {
+      "id": "step-1-recipes",
+      "description": "Image for step 1: delicious recipes",
+      "imageUrl": "https://i.imgur.com/GYEuJKi.png",
+      "imageHint": "recipe book"
+    },
+    {
+      "id": "step-2-marinades",
+      "description": "Image for step 2: tasty marinades",
+      "imageUrl": "https://i.imgur.com/8KR5CK1.png",
+      "imageHint": "marinated meat"
+    },
+    {
+      "id": "price-image",
+      "description": "Image showing the price and offer",
+      "imageUrl": "https://i.imgur.com/hhGE0f3.png",
+      "imageHint": "price offer"
+    },
+    {
+      "id": "author-suelen",
+      "description": "Portrait of Chef Suelen Costa",
+      "imageUrl": "https://images.unsplash.com/photo-1643834776503-891726ed42c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaGVmJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU4NTg0MDIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chef portrait"
+    }
+  ]
 }
