@@ -48,6 +48,9 @@ const HeroSection = () => (
           data-ai-hint={getImage('hero-main').imageHint}
         />
     </div>
+    <p className="mx-auto max-w-[700px] text-lg font-semibold text-primary/90 md:text-xl mt-8">
+        + 300 receitas aprovadas pra AirFryer: rápidas, saborosas e direto no ponto. Pra economizar tempo, evitar delivery e comer bem todos os dias.
+    </p>
   </SectionWrapper>
 );
 
@@ -126,7 +129,7 @@ const HowItWorksSection = () => {
         {
             title: "PASSO 2: Marinadas Que Fazem Qualquer Proteína Parecer de Restaurante",
             description: "Um manual direto com as marinadas que ninguém te ensina, mas todo mundo sente o cheiro e pergunta. Economiza tempo, turbina o sabor, e transforma peito de frango comum em prato digno de elogio.",
-            image: getImage('step-1-recipes')
+            image: getImage('step-2-marinades')
         },
         {
             title: "PASSO 3: AirFryer no Piloto Automático",
@@ -156,19 +159,17 @@ const HowItWorksSection = () => {
             <div className="mt-12 text-left space-y-12">
                 {steps.map((step, index) => (
                     <div key={index} className="grid md:grid-cols-2 gap-8 items-center">
-                        <div className={cn(index === 0 && 'md:order-2', index === 1 && "md:order-2")}>
-                           {step.title !== "PASSO 1: Receitas Saborosas de Air Fryer" && (
-                             <Image
-                                src={step.image.imageUrl}
-                                alt={step.image.description}
-                                width={600}
-                                height={600}
-                                className="rounded-xl shadow-lg object-cover aspect-square"
-                                data-ai-hint={step.image.imageHint}
-                            />
-                           )}
+                        <div className={cn(index % 2 === 1 && "md:order-2")}>
+                           <Image
+                              src={step.image.imageUrl}
+                              alt={step.image.description}
+                              width={600}
+                              height={600}
+                              className="rounded-xl shadow-lg object-cover aspect-square"
+                              data-ai-hint={step.image.imageHint}
+                          />
                         </div>
-                        <div className={cn("md:col-span-1", index === 0 && 'md:order-1 md:col-span-2', index === 1 && "md:order-1")}>
+                        <div className={cn("md:col-span-1", index % 2 === 1 && "md:order-1")}>
                             <h3 className="text-2xl font-bold text-primary font-headline">{step.title}</h3>
                             <p className="mt-4 text-foreground/80">{step.description}</p>
                         </div>
