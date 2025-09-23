@@ -39,14 +39,20 @@
     {
       "id": "step-1-recipes",
       "description": "Image for step 1: delicious recipes",
-      "imageUrl": "https://i.imgur.com/GYEuJKi.png",
+      "imageUrl": "https://i.imgur.com/4Lsa0BO.png",
       "imageHint": "recipe book"
     },
     {
       "id": "step-2-marinades",
       "description": "Image for step 2: tasty marinades",
-      "imageUrl": "https://i.imgur.com/8KR5CK1.png",
+      "imageUrl": "https://i.imgur.com/GYEuJKi.png",
       "imageHint": "marinated meat"
+    },
+    {
+      "id": "step-3-airfryer",
+      "description": "Image for step 3: AirFryer in action",
+      "imageUrl": "https://i.imgur.com/8KR5CK1.png",
+      "imageHint": "airfryer appliance"
     },
     {
       "id": "price-image",

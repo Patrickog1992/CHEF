@@ -134,7 +134,7 @@ const HowItWorksSection = () => {
         {
             title: "PASSO 3: AirFryer no Piloto Automático",
             description: "Colocou, esqueceu, voltou... pronto. Você vai aprender a usar sua AirFryer com lógica de resultado, não só “esquentar coisa”. Enquanto muita gente ainda tá decidindo o que fazer... você já tá comendo — com a pia limpa e o ego em paz.",
-            image: getImage('step-1-recipes')
+            image: getImage('step-3-airfryer')
         }
     ];
 
@@ -146,20 +146,10 @@ const HowItWorksSection = () => {
             <p className="mx-auto max-w-[700px] text-primary md:text-lg mt-2 font-semibold">
                 Todos os Dias, Sem Fritura, Louça ou Estresse.
             </p>
-            <div className="mt-8 mx-auto max-w-2xl">
-                <Image
-                    src={getImage('steps-overview').imageUrl}
-                    alt={getImage('steps-overview').description}
-                    width={800}
-                    height={450}
-                    className="rounded-xl shadow-xl"
-                    data-ai-hint={getImage('steps-overview').imageHint}
-                />
-            </div>
             <div className="mt-12 text-left space-y-12">
                 {steps.map((step, index) => (
                     <div key={index} className="grid md:grid-cols-2 gap-8 items-center">
-                        <div className={cn(index % 2 === 1 && "md:order-2")}>
+                        <div>
                            <Image
                               src={step.image.imageUrl}
                               alt={step.image.description}
@@ -169,7 +159,7 @@ const HowItWorksSection = () => {
                               data-ai-hint={step.image.imageHint}
                           />
                         </div>
-                        <div className={cn("md:col-span-1", index % 2 === 1 && "md:order-1")}>
+                        <div>
                             <h3 className="text-2xl font-bold text-primary font-headline">{step.title}</h3>
                             <p className="mt-4 text-foreground/80">{step.description}</p>
                         </div>
