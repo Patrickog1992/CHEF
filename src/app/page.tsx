@@ -156,7 +156,7 @@ const HowItWorksSection = () => {
             <div className="mt-12 text-left space-y-12">
                 {steps.map((step, index) => (
                     <div key={index} className="grid md:grid-cols-2 gap-8 items-center">
-                        <div className={cn(index % 2 === 1 && "md:order-2")}>
+                        <div className={cn(index === 0 && 'md:order-2', index === 1 && "md:order-2")}>
                            <Image
                                 src={step.image.imageUrl}
                                 alt={step.image.description}
@@ -166,7 +166,7 @@ const HowItWorksSection = () => {
                                 data-ai-hint={step.image.imageHint}
                             />
                         </div>
-                        <div className={cn(index % 2 === 1 && "md:order-1")}>
+                        <div className={cn(index === 0 && 'md:order-1', index === 1 && "md:order-1")}>
                             <h3 className="text-2xl font-bold text-primary font-headline">{step.title}</h3>
                             <p className="mt-4 text-foreground/80">{step.description}</p>
                         </div>
