@@ -126,12 +126,12 @@ const HowItWorksSection = () => {
         {
             title: "PASSO 2: Marinadas Que Fazem Qualquer Proteína Parecer de Restaurante",
             description: "Um manual direto com as marinadas que ninguém te ensina, mas todo mundo sente o cheiro e pergunta. Economiza tempo, turbina o sabor, e transforma peito de frango comum em prato digno de elogio.",
-            image: getImage('step-2-marinades')
+            image: getImage('step-1-recipes')
         },
         {
             title: "PASSO 3: AirFryer no Piloto Automático",
             description: "Colocou, esqueceu, voltou... pronto. Você vai aprender a usar sua AirFryer com lógica de resultado, não só “esquentar coisa”. Enquanto muita gente ainda tá decidindo o que fazer... você já tá comendo — com a pia limpa e o ego em paz.",
-            image: getImage('step-2-marinades') // As per prompt, using same image
+            image: getImage('step-1-recipes')
         }
     ];
 
