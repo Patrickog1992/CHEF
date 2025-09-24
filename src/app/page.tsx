@@ -59,12 +59,9 @@ const HeroSection = () => (
 const ProblemAgitationSection = () => (
     <SectionWrapper>
         <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-headline">
-          300 receitas aprovadas pra AirFryer: rápidas, saborosas e direto no ponto.
+          Você não tá cansada de pagar caro pra se arrepender depois?
         </h2>
-        <p className="mx-auto max-w-[700px] text-foreground/80 md:text-lg mt-4">
-          Pra economizar tempo, evitar delivery e comer bem todos os dias. Você não tá cansada de pagar caro pra se arrepender depois?
-        </p>
-        <div className="mt-8 text-left max-w-2xl mx-auto space-y-4 text-foreground/70">
+        <div className="mt-8 text-left max-w-2xl mx-auto space-y-4 text-foreground/70 text-lg">
             <p>O delivery chega frio. A comida vem oleosa. E mesmo assim, você ainda chama isso de “praticidade”.</p>
             <p>Enquanto isso, a AirFryer que você comprou pra facilitar sua vida… segue parada.</p>
             <p className="font-semibold text-foreground/90">Mais de 5.000 mulheres já quebraram esse ciclo.</p>
