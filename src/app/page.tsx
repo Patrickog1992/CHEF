@@ -1,3 +1,5 @@
+
+'use client';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -292,7 +294,7 @@ const AuthorSection = () => (
                     alt={getImage('author-suelen').description}
                     width={400}
                     height={400}
-                    className="rounded-full aspect-square object-cover shadow-xl mx-auto"
+                    className="rounded-full aspect-square object-cover object-top shadow-xl mx-auto"
                     data-ai-hint={getImage('author-suelen').imageHint}
                 />
             </div>
