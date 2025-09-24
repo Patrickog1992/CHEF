@@ -61,7 +61,7 @@ const ProblemAgitationSection = () => (
         <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-headline">
           Você não tá cansada de pagar caro pra se arrepender depois?
         </h2>
-        <div className="mt-8 text-left max-w-2xl mx-auto space-y-4 text-foreground/70 text-lg">
+        <div className="mt-8 text-center max-w-2xl mx-auto space-y-4 text-foreground/70 text-lg">
             <p>O delivery chega frio. A comida vem oleosa. E mesmo assim, você ainda chama isso de “praticidade”.</p>
             <p>Enquanto isso, a AirFryer que você comprou pra facilitar sua vida… segue parada.</p>
             <p className="font-semibold text-foreground/90">Mais de 5.000 mulheres já quebraram esse ciclo.</p>
@@ -382,3 +382,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
