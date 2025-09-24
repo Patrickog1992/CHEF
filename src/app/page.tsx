@@ -304,9 +304,16 @@ const AuthorSection = () => (
                 <div className="prose prose-lg mt-4 text-foreground/70 space-y-4">
                     <p>Formada em Gastronomia. Treinada na rotina. Forjada no caos. Especialista em derrubar a ilusão de que cozinhar bem exige tempo, talento ou vocação.</p>
                     <p>Eu não vim da TV. Eu vim da vida real.</p>
-                    <p>Desde 2012, ajudo mulheres que trabalham, cuidam, resolvem e ainda são cobradas por não “caprichar no jantar”.</p>
                     <p className="font-semibold text-foreground">Eu não vendo receitas. Eu vendo tempo, paz, sabor e o direito de você não se sentir culpada por estar cansada.</p>
+                    <p>Sou filha de mulher que virava a noite pra garantir almoço no dia seguinte. Cresci ouvindo panela de pressão às 6h da manhã e mãe chorando baixinho na pia.</p>
+                    <p>O Receitas de Chefryer™ nasceu disso.</p>
+                    <p>De olhar pra mulher comum exausta, real, sem tempo e entregar um método que funciona mesmo quando ela tá no limite.</p>
+                    <p>Em 12 minutos. Sem óleo. Sem louça. E sem se sentir um fracasso por não dar conta de tudo.</p>
                     <p>O Receitas de Chefryer™ não é um curso. É um sistema de libertação doméstica.</p>
+                    <p>Se você acha que não tem tempo, energia ou talento… então você é exatamente pra quem eu criei isso.</p>
+                    <p>Você não precisa provar mais nada pra ninguém.</p>
+                    <p>Mas tá na hora de se provar que você consegue fazer diferente.</p>
+                    <p>E eu vou te ajudar a fazer isso uma receita por vez.</p>
                     <p className="italic text-primary font-semibold">“Eu já estive aí. E eu não deixo ninguém ficar lá sozinha.”</p>
                 </div>
             </div>
