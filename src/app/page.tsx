@@ -136,7 +136,7 @@ const ClientCommentsSection = () => {
             <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-headline">
                 Comentários dos nossos clientes:
             </h2>
-            <div className="mt-8 relative max-w-3xl mx-auto">
+            <div className="mt-8 relative max-w-3xl mx-auto px-10">
                 <Carousel opts={{ loop: true }}>
                     <CarouselContent>
                         {comments.map((comment) => (
@@ -158,8 +158,8 @@ const ClientCommentsSection = () => {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious className="absolute left-[-20px] top-1/2 -translate-y-1/2" />
-                    <CarouselNext className="absolute right-[-20px] top-1/2 -translate-y-1/2" />
+                    <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2" />
+                    <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2" />
                 </Carousel>
             </div>
         </SectionWrapper>
@@ -432,7 +432,7 @@ const FaqSection = () => {
 
 export default function Home() {
   return (
-    <div className="bg-background text-foreground font-body">
+    <div className="bg-background text-foreground font-body overflow-x-hidden">
       <main className="flex flex-col items-center">
         <HeroSection />
         <ProblemAgitationSection />
