@@ -6,7 +6,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Check, CheckCircle2 } from 'lucide-react';
 import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
 import { cn } from '@/lib/utils';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+
 
 const getImage = (id: string): ImagePlaceholder => {
   const image = PlaceHolderImages.find(img => img.id === id);
@@ -103,6 +106,66 @@ const TestimonialsSection = () => (
     </div>
   </SectionWrapper>
 );
+
+const ClientCommentsSection = () => {
+    const comments = [
+        {
+            id: 'client-1',
+            name: 'Fernanda L.',
+            comment: 'As receitas são incríveis! Fáceis, rápidas e deliciosas. Minha família amou e eu finalmente parei de gastar com delivery. Super recomendo!',
+        },
+        {
+            id: 'client-2',
+            name: 'Juliana P.',
+            comment: 'Nunca imaginei que poderia fazer pratos tão saborosos na AirFryer. O e-book é muito prático e as dicas de marinada são fantásticas. Valeu cada centavo!',
+        },
+        {
+            id: 'client-3',
+            name: 'Camila S.',
+            comment: 'Estou amando! As receitas são perfeitas para a correria do dia a dia. Comida saudável, gostosa e sem sujeira na cozinha. Mudou minha rotina!',
+        },
+        {
+            id: 'client-4',
+            name: 'Patrícia M.',
+            comment: 'Simplesmente maravilhoso! As opções de cardápio me ajudaram a organizar a semana toda. É muito mais fácil comer bem assim. Indico de olhos fechados!',
+        },
+    ];
+
+    return (
+        <SectionWrapper>
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-headline">
+                Comentários dos nossos clientes:
+            </h2>
+            <div className="mt-8 relative max-w-3xl mx-auto">
+                <Carousel opts={{ loop: true }}>
+                    <CarouselContent>
+                        {comments.map((comment) => (
+                            <CarouselItem key={comment.id} className="md:basis-1/2 lg:basis-1/2">
+                                <div className="p-1 h-full">
+                                    <Card className="flex flex-col h-full text-left shadow-lg hover:shadow-xl transition-shadow">
+                                        <CardHeader className="flex flex-row items-center gap-4 pb-4">
+                                            <Avatar className="w-16 h-16 border-2 border-primary">
+                                                <AvatarImage src={getImage(comment.id).imageUrl} alt={comment.name} />
+                                                <AvatarFallback>{comment.name.charAt(0)}</AvatarFallback>
+                                            </Avatar>
+                                            <div className="font-bold text-lg text-primary">{comment.name}</div>
+                                        </CardHeader>
+                                        <CardContent>
+                                            <p className="text-foreground/80">"{comment.comment}"</p>
+                                        </CardContent>
+                                    </Card>
+                                </div>
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="absolute left-[-20px] top-1/2 -translate-y-1/2" />
+                    <CarouselNext className="absolute right-[-20px] top-1/2 -translate-y-1/2" />
+                </Carousel>
+            </div>
+        </SectionWrapper>
+    );
+};
+
 
 const PromiseSection = () => (
     <SectionWrapper>
@@ -370,6 +433,7 @@ export default function Home() {
         <HeroSection />
         <ProblemAgitationSection />
         <TestimonialsSection />
+        <ClientCommentsSection />
         <PromiseSection />
         <HowItWorksSection />
         <OfferStackSection />

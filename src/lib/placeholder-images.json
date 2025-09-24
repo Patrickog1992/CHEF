@@ -65,6 +65,30 @@
       "description": "Portrait of Chef Suelen Costa",
       "imageUrl": "https://i.imgur.com/J2zu16g.png",
       "imageHint": "chef portrait"
+    },
+    {
+      "id": "client-1",
+      "description": "Profile picture of a happy female customer",
+      "imageUrl": "https://i.imgur.com/Sza1ZfT.png",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "client-2",
+      "description": "Profile picture of a happy female customer",
+      "imageUrl": "https://i.imgur.com/GJZpDHa.png",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "client-3",
+      "description": "Profile picture of a happy female customer",
+      "imageUrl": "https://i.imgur.com/sqYjS4V.png",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "client-4",
+      "description": "Profile picture of a happy female customer",
+      "imageUrl": "https://i.imgur.com/SPsVs9s.jpg",
+      "imageHint": "woman portrait"
     }
   ]
 }
