@@ -115,7 +115,7 @@ const PromiseSection = () => (
         <p className="mx-auto max-w-[700px] text-foreground/80 md:text-lg mt-4">
             Você não vai sujar nada. “Não vai cansar”. E ainda vai ouvir isso.
         </p>
-        <Button size="lg" className="mt-8 text-lg font-bold py-8 px-10 shadow-lg hover:shadow-primary/50 transition-shadow">
+        <Button size="lg" className="mt-8 text-lg font-bold py-8 px-10 shadow-lg bg-green-500 hover:bg-green-600 text-white animate-pulse">
           Quero sair do ciclo agora
         </Button>
     </SectionWrapper>
@@ -276,7 +276,7 @@ const PricingSection = ({ installmentPlan, isDuplicate = false }: { installmentP
                     <p className="text-lg font-semibold text-foreground">ou R$24,90 à vista no Pix ou cartão</p>
                 </div>
                 <p className="mt-4 text-sm font-semibold text-destructive animate-pulse">Vagas com esse valor podem encerrar ainda hoje.</p>
-                <Button size="lg" className="mt-6 text-xl font-bold py-8 px-12 shadow-lg hover:shadow-primary/50 transition-shadow w-full md:w-auto">
+                <Button size="lg" className="mt-6 text-xl font-bold py-8 px-12 shadow-lg bg-green-500 hover:bg-green-600 text-white animate-pulse w-full md:w-auto">
                     SIM, EU QUERO RECEBER AGORA
                 </Button>
                 <p className="mt-4 text-sm text-foreground/60">Garantia incondicional de 7 dias. Se não gostar, devolvemos 100% do valor.</p>
