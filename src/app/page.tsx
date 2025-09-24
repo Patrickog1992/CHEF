@@ -332,8 +332,8 @@ const PricingSection = ({ installmentPlan, isDuplicate = false }: { installmentP
                  <div className="bg-primary/10 border border-primary/20 rounded-lg p-6">
                     <p className="font-bold text-primary text-sm uppercase">ACESSO VITALÍCIO IMEDIATO</p>
                     <p className="text-sm text-foreground/70">Pagamento único. Sem mensalidades.</p>
-                    <p className="text-5xl md:text-6xl font-black text-primary my-2">{installmentPlan}</p>
-                    <p className="text-lg font-semibold text-foreground">ou R$24,90 à vista no Pix ou cartão</p>
+                    <p className="text-5xl md:text-6xl font-black text-green-600 my-2">{installmentPlan}</p>
+                    <p className="text-lg font-semibold text-green-600">ou R$24,90 à vista no Pix ou cartão</p>
                 </div>
                 <p className="mt-4 text-sm font-semibold text-destructive animate-pulse">Vagas com esse valor podem encerrar ainda hoje.</p>
                 <Button size="lg" className="mt-6 text-xl font-bold py-8 px-12 shadow-lg bg-green-500 hover:bg-green-600 text-white animate-pulse w-full md:w-auto">
@@ -446,5 +446,7 @@ export default function Home() {
     </div>
   );
 }
+
+    
 
     
